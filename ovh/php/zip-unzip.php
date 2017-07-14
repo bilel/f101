@@ -3,6 +3,8 @@
 <?php 
 ini_set('max_execution_time', 600);
 ini_set('memory_limit','1024M');
+//getcwd() could helpful to verify the path
+//echo getcwd();
 $source = "/home/user/www/file.zip";
 $destination = "/home/user/www/folder7";
 $zip = new ZipArchive;
