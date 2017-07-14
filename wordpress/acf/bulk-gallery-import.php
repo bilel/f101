@@ -40,10 +40,10 @@ while ( $the_query->have_posts() ) :
 	 
 	 chdir($diri); 
  //We create an array of Post Attachment's IDs
- $reized = glob("$slug-[0-9]*x[0-9]*.*", GLOB_BRACE); 
+ $resized = glob("$slug-[0-9]*x[0-9]*.*", GLOB_BRACE); 
  $allimages = glob("$slug*.{jpg,JPG,jpeg,JPEG,png,PNG}", GLOB_BRACE);
  
-$images = array_diff($allimages1, $resized);
+$images = array_diff($allimages, $resized);
 $idx = array();
 
  foreach($images as $image){
