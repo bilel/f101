@@ -1,0 +1,3 @@
+
+#Shortcut comamnd to Execute Bash, Python from Notepad++
+C:\cygwin\bin\bash.exe -l -c "cd \"$0\" ; echo $@; \"./$1\"; exec bash;" "$(CURRENT_DIRECTORY)" "$(FILE_NAME)"
