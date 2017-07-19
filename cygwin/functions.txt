@@ -1,0 +1,8 @@
+#Create a new directory and CD into it!
+mcd() { mkdir -p "$1"; cd "$1";} 
+
+#Open file in Notepad++ (Could be also used to other apps acepting files as parameters)
+np ()
+{
+    /cygdrive/c/Program\ Files/Notepad++/notepad++.exe $* &
+}
