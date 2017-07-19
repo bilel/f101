@@ -1,3 +1,11 @@
 
 #Shortcut comamnd to Execute Bash, Python from Notepad++
 C:\cygwin\bin\bash.exe -l -c "cd \"$0\" ; echo $@; \"./$1\"; exec bash;" "$(CURRENT_DIRECTORY)" "$(FILE_NAME)"
+
+
+#From terminal (opposite direction!)
+#Open file in Notepad++ (Could be also used to other apps acepting files as parameters)
+np ()
+{
+    /cygdrive/c/Program\ Files/Notepad++/notepad++.exe $* &
+}
