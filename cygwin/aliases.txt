@@ -1,0 +1,15 @@
+#lsblk like for Cygwin to list all Drives. 
+alias lsblk='for F in /dev/s* ; do echo "$F $(cygpath -w $F)" ; done'
+
+#Easier way to move between directories
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
+
+#Go back to the last directory
+alias back='cd $OLDPWD'
+
+#Quick files and directories search
+alias ff='find . -type f -name'
+alias fd='find . -type d -name'
