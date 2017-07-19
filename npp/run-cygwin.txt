@@ -4,7 +4,8 @@ C:\cygwin\bin\bash.exe -l -c "cd \"$0\" ; echo $@; \"./$1\"; exec bash;" "$(CURR
 
 
 #From terminal (opposite direction!)
-#Open file in Notepad++ (Could be also used to other apps acepting files as parameters)
+#function to Open file in Notepad++ (Could be also used to other apps acepting files as parameters)
+#Ex : np iso.txt
 np ()
 {
     /cygdrive/c/Program\ Files/Notepad++/notepad++.exe $* &
